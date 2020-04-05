@@ -7,6 +7,8 @@ Acessando/interagindo com um arquivo ``*.ui`` (XML).
 from PyQt5.QtWidgets import QApplication
 from PyQt5.uic import loadUi
 
+from libraries import cripto
+
 
 class MeuAplicativo:
     """Classe."""
@@ -30,7 +32,6 @@ if __name__ == "__main__":
 
     app = QApplication(sys.argv)
     # Lendo o arquivo de interface.
-    # window = loadUi('forms/mainwindow-creator.ui')
     window = loadUi('forms/mainwindow.ui')
     ui = MeuAplicativo(window=window)
     window.show()
