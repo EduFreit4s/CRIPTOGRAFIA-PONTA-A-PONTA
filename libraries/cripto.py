@@ -4,6 +4,9 @@ import secrets
 MAX_PRIME_BITS = 8     
 MIN_PRIME_BITS = 6
 
+# Size of each encrypted letter
+CHAR_SIZE = 5
+
 # This function generates random prime number based on secrets security library and the nbits interval 
 def Random_prime():
     k = secrets.randbits(MAX_PRIME_BITS)
@@ -23,8 +26,7 @@ def Random_p_q():
     else:
         return p, q
 
-
-
+#GDC
 def MDC(a, b):
     if a == 0:
         return b
@@ -36,13 +38,14 @@ def MDC(a, b):
 def Phi(p, q):
     return (p - 1) * (q - 1)
 
+#Product of two primes
 def Semi_prime(p, q):
     return p*q
 
+# e != 1, 1 < e < Phi
 def E(phi):
     id = False
     i = secrets.randbelow(phi - 1)
-    # e != 1, 1 < e < phi
     while (id != True):
         i+=1
         if MDC(phi, i) == 1:
@@ -50,37 +53,50 @@ def E(phi):
             e_key = i
     return e_key
 
-
+#Keys gen
 def generator():
     p, q = Random_p_q()
     fi = Phi(p, q) 
     e = E(fi)
+    n = p*q
     # This loop finds the modular inverse of 'e' that satisfies the equation i*e % Phi = 1
-    i = 1
+    d = fi//e
     key = False
     while key == False:
-        i+=1
-        if((i*e)%fi) == 1:
+        d+=1
+        if((d*e)%fi) == 1:
             key = True
-    return e, p*q, i
+    return e, n, d
     
-
-def lock(text, e, semiprime):
+#Encryptor
+def lock(text, e, n):
     c = ""
     for i in text:
-        x = (ord(i)**e)%semiprime
-        c+= str('%08d'%x)
+        x = (ord(i)**e)%n
+        k = CHAR_SIZE-len(str(x))
+        while k > 0:
+            c+= "0"
+            k-=1
+        c+= str(x)    
     return c
 
-def unlock(text, y, semiprime):
-    txt = ""
+#Decryptor
+def unlock(text, d, n):
+    m = ""
     u = ""
     for i in text:
         u+= i
-        if(len(u) == 8):
-            txt += chr((int(u)**y)%semiprime)
+        if(len(u) == CHAR_SIZE):
+            m += chr((int(u)**d)%n)
             u = ""
-    
-    return txt
+    return m
 
+################################# test ##################################
 
+e, n, d= generator()
+print("Public: ", e, n)
+print("Private: ", d)
+
+g = lock("42", e, n)
+print(g)
+print(unlock(g, d, n))
