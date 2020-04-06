@@ -59,7 +59,7 @@ def generator():
     fi = Phi(p, q) 
     e = E(fi)
     n = p*q
-    # This loop finds the modular inverse of 'e' that satisfies the equation i*e % Phi = 1
+    # This loop finds the modular inverse of 'e' that satisfies the equation d*e % Phi = 1
     d = fi//e
     key = False
     while key == False:
