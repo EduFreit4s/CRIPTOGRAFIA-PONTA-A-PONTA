@@ -38,10 +38,6 @@ def MDC(a, b):
 def Phi(p, q):
     return (p - 1) * (q - 1)
 
-#Product of two primes
-def Semi_prime(p, q):
-    return p*q
-
 # e != 1, 1 < e < Phi
 def E(phi):
     id = False
