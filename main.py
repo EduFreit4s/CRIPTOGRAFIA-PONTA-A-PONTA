@@ -25,7 +25,6 @@ class MeuAplicativo:
         self.b_down = window.b_down
         self.chat_b = window.b_chat
 
-        
         # Conectando um método ao evento de clique do botão.
         self.push_button_a.clicked.connect(self._on_button_clicked_a)
         self.push_button_b.clicked.connect(self._on_button_clicked_b)
@@ -47,7 +46,6 @@ class MeuAplicativo:
             self.a_down.setText(text_b)
             self.b_up.setText(text_b)
             self.chat_b.clear()
-
 
 if __name__ == "__main__":
     import sys
