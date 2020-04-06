@@ -97,6 +97,6 @@ e, n, d= generator()
 print("Public: ", e, n)
 print("Private: ", d)
 
-g = lock("42", e, n)
-print(g)
+g = lock("me ajuda", e, n)
+print("criptografado:", g)
 print(unlock(g, d, n))
