@@ -5,7 +5,7 @@ MAX_PRIME_BITS = 8
 MIN_PRIME_BITS = 6
 
 # Size of each encrypted letter
-CHAR_SIZE = 5
+CHAR_SIZE = 6
 
 # This function generates random prime number based on secrets security library and the nbits interval 
 def Random_prime():
@@ -41,7 +41,7 @@ def Phi(p, q):
 # e != 1, 1 < e < Phi
 def E(phi):
     id = False
-    i = secrets.randbelow(phi - 1)
+    i = 1+secrets.randbelow(phi - 1)%100
     while (id != True):
         i+=1
         if MDC(phi, i) == 1:
@@ -89,10 +89,10 @@ def unlock(text, d, n):
 
 ################################# test ##################################
 
-e, n, d= generator()
-print("Public: ", e, n)
-print("Private: ", d)
+#e, n, d= generator()
+#print("Public: ", e, n)
+#print("Private: ", d)
 
-g = lock("42", e, n)
-print(g)
-print(unlock(g, d, n))
+#g = lock("42", e, n)
+#print(g)
+#print(unlock(g, d, n))

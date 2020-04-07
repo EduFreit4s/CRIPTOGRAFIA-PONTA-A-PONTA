@@ -14,7 +14,7 @@
     <x>0</x>
     <y>0</y>
     <width>751</width>
-    <height>586</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -26,13 +26,13 @@
   <property name="minimumSize">
    <size>
     <width>751</width>
-    <height>586</height>
+    <height>500</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>751</width>
-    <height>586</height>
+    <height>500</height>
    </size>
   </property>
   <property name="font">
@@ -54,7 +54,7 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>110</y>
+     <y>90</y>
      <width>300</width>
      <height>350</height>
     </rect>
@@ -73,7 +73,7 @@
    <property name="geometry">
     <rect>
      <x>420</x>
-     <y>110</y>
+     <y>90</y>
      <width>300</width>
      <height>350</height>
     </rect>
@@ -92,7 +92,7 @@
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>410</y>
+     <y>390</y>
      <width>51</width>
      <height>51</height>
     </rect>
@@ -127,7 +127,7 @@
    <property name="geometry">
     <rect>
      <x>670</x>
-     <y>410</y>
+     <y>390</y>
      <width>51</width>
      <height>51</height>
     </rect>
@@ -162,7 +162,7 @@
    <property name="geometry">
     <rect>
      <x>82</x>
-     <y>419</y>
+     <y>400</y>
      <width>181</width>
      <height>31</height>
     </rect>
@@ -197,7 +197,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>420</y>
+     <y>400</y>
      <width>181</width>
      <height>31</height>
     </rect>
@@ -235,7 +235,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>330</y>
+     <y>310</y>
      <width>261</width>
      <height>61</height>
     </rect>
@@ -254,7 +254,7 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>240</y>
+     <y>220</y>
      <width>261</width>
      <height>61</height>
     </rect>
@@ -273,7 +273,7 @@
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>330</y>
+     <y>310</y>
      <width>261</width>
      <height>61</height>
     </rect>
@@ -292,7 +292,7 @@
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>240</y>
+     <y>220</y>
      <width>261</width>
      <height>61</height>
     </rect>
@@ -311,7 +311,7 @@
    <property name="geometry">
     <rect>
      <x>450</x>
-     <y>330</y>
+     <y>310</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -319,7 +319,7 @@
    <property name="font">
     <font>
      <family>Segoe UI</family>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
@@ -364,7 +364,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>240</y>
+     <y>220</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -417,7 +417,7 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>330</y>
+     <y>310</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -425,7 +425,7 @@
    <property name="font">
     <font>
      <family>Segoe UI</family>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
@@ -470,7 +470,7 @@
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>240</y>
+     <y>220</y>
      <width>231</width>
      <height>61</height>
     </rect>
@@ -519,7 +519,249 @@
     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
    </property>
   </widget>
+  <widget class="QSplitter" name="splitter_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(10, 132, 118);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QSplitter" name="expo_2">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Expoente</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="b_e">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="public_3">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Chave pública</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="b_n">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="private_3">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Chave privada</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="b_d">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(10, 132, 118);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="handleWidth">
+    <number>0</number>
+   </property>
+   <property name="childrenCollapsible">
+    <bool>false</bool>
+   </property>
+   <widget class="QSplitter" name="expo">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="handleWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Expoente</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="a_e">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="public_2">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="handleWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Chave pública</string>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="a_n">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="private_2">
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="handleWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLabel" name="label_private">
+     <property name="text">
+      <string>Chave privada</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="a_d">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="indent">
+      <number>10</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
  </widget>
+ <tabstops>
+  <tabstop>btn_b</tabstop>
+  <tabstop>a_chat</tabstop>
+  <tabstop>b_chat</tabstop>
+  <tabstop>btn_a</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
