@@ -58,14 +58,14 @@ Descodificando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.99
 RSA é um acrônimo para (Rivest-Shamir-Adleman). Cientistas criadores do algoritmo apresentado pela primeira vez em 1978 para uso militar e estratégico. 
 A RSA Data Security Inc. recomenda gerar números primos p e q com 2048 bits de tamanho, ou seja, 617 dígitos. Isso garante proteção até 2030.  
 
-A teoria dos números é a base do rsa e sua força vem do problema da fatoração de inteiros em tempo polinomial. Problema esse tão difícil quanto o paradoxo do caixeiro viajante ou problema do logaritmo discreto <br/>
+A teoria dos números é a base do rsa e sua força vem do problema da fatoração de inteiros em tempo polinomial. Problema esse tão difícil quanto o paradoxo do caixeiro viajante ou problema do logaritmo discreto <br/><br/>
 *Quantas combinações de p e q são capazes de gerar um n?* Essa resposta só depende do tamanho de p e q. <br/>
 <p align="center">
   <img width="400" height="200" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
 </p>
-Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.
+Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.<br/>
 
-A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dado na internet. Desenvolvedores blindar seu software com chaves que garantem autenticidade. RSA também é utilizado em programas de vpn que torna impossível rastrear uma remetente web. 
+A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dado na internet. Desenvolvedores podem blindar seu software com chaves que garantem autenticidade. RSA também é utilizado em programas de vpn que torna impossível rastrear uma remetente web. 
 
 
 
