@@ -70,7 +70,8 @@ A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dad
 
 - Email:  [freitas.eduardo@academico.ifpb.edu.br](mailto:freitas.eduardo@academico.ifpb.edu.br)
                                           
-                                          Copyright (c) 2020 EduFreit4s
+                                                
+                                                 Copyright (c) 2020 EduFreit4s
 
 
 
