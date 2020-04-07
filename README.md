@@ -5,7 +5,7 @@
 Este programa escrito em python demonstra uma tecnica de criptação utilizada no mundo todo 
 
 <p align="center">
-  <img width="460" height="350" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/home.PNG">
+  <img width="460" height="400" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/home.PNG">
 </p>
 
 ## Como funciona criptográfia assimétrica?
@@ -58,9 +58,11 @@ Descodificando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.99
 RSA é um acronimo para (Rivest-Shamir-Adleman). Cientistas criadores do algoritmo apresentado pela primeira vez em 1978 para uso militar e estrátegico. 
 A RSA Data Security Inc recomenda gerar números primos p e q com 2048 bits de tamanho , ou seja, 617 dígitos para proteção até 2030.  
 
+<p align="center">
+  <img width="200" height="50" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
+</p>
 
 A teoria por trás da criptografia rsa vem do problema da fatoraração de inteiros em tempo polinomial. <br/>
-![404](https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg)
 *Quantas combinações de p e q são capazes de gerar um n?* Essa resposta só depende do tamanho de p e q. Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.
 
 
