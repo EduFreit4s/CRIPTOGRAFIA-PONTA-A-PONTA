@@ -8,10 +8,10 @@ Este programa escrito em python demonstra uma tecnica de criptação utilizada n
 
 ## Como funciona criptográfia assimétrica?
 
-A criptográfia é baseada em uma transformada cuja função inversa é muito díficil de calcular. Ficou estranho né? Eu explico! Imagine o sen(*x*) = *m*. Se quisermos encontrar o valor de **x** da função seno cuja resposta é **m**, basta aplicar a função inversa arcoseno(*m*) = *x*. *Exemplo: sen(90) = 1 logo, arcosen(1) é igual a 90.* Até agora fácil né?
+A criptográfia é baseada em uma transformada cuja função inversa é muito díficil de calcular. Ficou estranho né? Eu explico! Imagine o seno(*x*) = *m*. Se quisermos encontrar o valor de **x** da função seno cuja resposta é **m**, basta aplicar a função inversa arcoseno(*m*) = *x*. *Exemplo: seno(90) = 1 logo, arcoseno(1) é igual a 90.* Até agora fácil né?
 
 A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. Funciona assim:
-Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
+com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
 
 A função assimétrica de criptográfia é dada por (*x*^*chave pública*) mod *módulo* = **m** e a função inversa ou de descriptografia é dada por (**m**^*chave privada*) mod *módulo* = **x**. Na nossa analogia, **x** representa o texto puro, enquanto o **m** é o mesmo texto codificado.  
 
@@ -28,7 +28,7 @@ Vamos chamar a nossa **chave pública** de *e*. A matemática garante que existe
 
 Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** cujo o resto da divisão por Phi(**n**) tem valor igual a um. <br/> *Exemplo: e * d mod phi(n) = 1*
 
-*Demostração*
+### *Demostração*
 
 *p = 13, q = 17* <br/>
 *n = 13 * 17 = 221* <br/>
@@ -36,14 +36,14 @@ Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** 
 *MMC(Phi(n), e) = 1, MMC(192, e) = 1, MMC(192, 11) = 1, e = 11* <br/>
 *d = d * e mod Phi(n) = 1, d * 11 mod 192 = 1, 35 * 11 mod 192 = 1, d = 35.* <br/>
 
-chave pública = e = 11 <br/>
-chave privada = d = 35 <br/>
-módulo = n = 221 <br/>
+chave pública = 11 <br/>
+chave privada = 35 <br/>
+módulo = 221 <br/>
 
 criptografando: **42**^*11 (717.368.321.110.468.608) mod 221 = **87** <br/>
 descriptografando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.994.383.111.779.411.134.326.272.099.143) mod 221 = **42** <br/>
 
-*obs: utilize a calculadora do windows ou [site](https://www.wolframalpha.com/) para calcular esses números grandes!*
+*obs: utilize a calculadora do windows ou [site](https://www.wolframalpha.com/) se quiser calcular esses números grandes!*
 
 
 
