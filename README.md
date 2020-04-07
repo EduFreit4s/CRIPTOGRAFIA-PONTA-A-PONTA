@@ -24,7 +24,7 @@ A função assimétrica de criptográfia é dada por (*x*^*chave pública*) mod 
 São necessários dois números primos bem grandes. Chamaremos esses números de **p** e **q**. O nosso primeiro número mágico **módulo** é o produto de *p e q*. Vamos chamar esse produto de **n**.
 Depois é necessário calcular Phi(**n**) que é dado por (**p**-1) * (**q**-1).
 
-Vamos chamar a nossa **chave pública** de *e*. A matemática garante que existe um 1 < *e* < Phi(**n**) cujo o máximo divisor comum entre **e** e Phi(**n**) é igual a um. Neste caso, **e** um coprimo de Phi.
+Vamos chamar a nossa **chave pública** de *e*. A matemática garante que existe um 1 < *e* < Phi(**n**) cujo o máximo divisor comum entre **e** e Phi(**n**) é igual a um.
 
-Por último, a **chave privada** ou **d**, é a pôtencia de **m** cujo o resto da divisão por Phi(**n**) tem valor igual a um. *Exemplo: e * d mod phi(n) = 1*
+Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** cujo o resto da divisão por Phi(**n**) tem valor igual a um. *Exemplo: e * d mod phi(n) = 1*
 
