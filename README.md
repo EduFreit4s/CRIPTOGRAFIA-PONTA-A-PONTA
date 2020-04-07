@@ -63,12 +63,14 @@ A teoria dos números é a base do rsa e sua força vem do problema da fatoraç�
 <p align="center">
   <img width="400" height="200" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
 </p>
-Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.<br/>
+Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.<br/><br/>
 
 A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dado na internet. Desenvolvedores podem blindar seu software com chaves que garantem autenticidade. RSA também é utilizado em programas de vpn que torna impossível rastrear uma remetente web. 
 
 
-
+- Email:  [freitas.eduardo@academico.ifpb.edu.br](mailto:freitas.eduardo@academico.ifpb.edu.br)
+                                          
+                                          Copyright (c) 2020 EduFreit4s
 
 
 
