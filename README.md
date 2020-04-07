@@ -58,6 +58,7 @@ A RSA Data Security Inc recomenda gerar números primos p e q com 2048 bits de t
 
 
 A teoria por trás da criptografia rsa vem do problema da fatoraração de inteiros em tempo polinomial. <br/>
+![404](https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg)
 *Quantas combinações de p e q são capazes de gerar um n?* Essa resposta só depende do tamanho de p e q. Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.
 
 
