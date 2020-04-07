@@ -59,7 +59,7 @@ RSA é um acronimo para (Rivest-Shamir-Adleman). Cientistas criadores do algorit
 A RSA Data Security Inc recomenda gerar números primos p e q com 2048 bits de tamanho , ou seja, 617 dígitos para proteção até 2030.  
 
 <p align="center">
-  <img width="400" height="75" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
+  <img width="400" height="120" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
 </p>
 
 A teoria por trás da criptografia rsa vem do problema da fatoraração de inteiros em tempo polinomial. <br/>
