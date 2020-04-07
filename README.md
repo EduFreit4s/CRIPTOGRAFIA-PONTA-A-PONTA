@@ -30,8 +30,8 @@ Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** 
 
 *Demostração*
 
-*p = 13, q = 17*
-*n = 13 * 17 = 221*
+*p = 13, q = 17* \n
+*n = 13 * 17 = 221* \n
 *Phi(n) = Phi(221) = (p-1) * (q-1) = (13-1) * (17-1) =  12 * 16 = 192*
 *MMC(Phi(n), e) = 1, MMC(192, e) = 1, MMC(192, 11) = 1, e = 11*
 *d = d * e mod Phi(n) = 1, d * 11 mod 192 = 1, 35 * 11 mod 192 = 1, d = 35.*
