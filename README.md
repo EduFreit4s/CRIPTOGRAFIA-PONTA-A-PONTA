@@ -16,8 +16,8 @@ Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**,
 Na nossa analogia, **x** representa o texto que eu quero cifrar, enquanto o **m** é o mesmo texto já embaralhado.
 A função assimétrica de criptográfia é dada por (*x*^*chave pública*) mod *módulo* = **m** e a função inversa ou de descriptografia é dada por (**m**^*chave privada*) mod *módulo* = **x**.  
 
-*Observe que apenas a chave privada é capaz de desfazer a criptográfia e a segurança do sistema depende de ninguém conhecê-la ou quão díficil é tentar descobrir*
+*Observe que apenas a chave privada é capaz de desfazer a criptográfia e a segurança do sistema depende de ninguém conhecê-la ou quão díficil é tentar descobrir-la*
 
-### *chave pública, privada e módulo
+### *chave pública, privada e módulo*
 
 O primeiro passo é escolher dois números primos bem grandes. Chamaremos esses números de *p* e *q*. Depois é necessário calcular a 
