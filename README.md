@@ -28,3 +28,22 @@ Vamos chamar a nossa **chave pública** de *e*. A matemática garante que existe
 
 Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** cujo o resto da divisão por Phi(**n**) tem valor igual a um. *Exemplo: e * d mod phi(n) = 1*
 
+*Demostração 
+
+*p = 13, q = 17
+*n = 13 * 17 = 221
+*Phi(n) = Phi(221) = (p-1) * (q-1) = (13-1) * (17-1) =  12 * 16 = 192
+*MMC(Phi(n), e) = 1, MMC(192, e) = 1, MMC(192, 11) = 1, e = 11
+*d = d * e mod Phi(n) = 1, d * 11 mod 192 = 1, 35 * 11 mod 192 = 1, d = 35.
+
+chave pública = e = 11
+chave privada = d = 35
+módulo = n = 221
+
+*Exemplo criptografando: **42**^*11 (717.368.321.110.468.608) mod 221 = **87**
+*descriptografando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.994.383.111.779.411.134.326.272.099.143) mod 221 = **42**
+
+*obs: utilize a calculadora do windows ou site https://www.wolframalpha.com/ para calcular esses números grandes!
+
+
+
