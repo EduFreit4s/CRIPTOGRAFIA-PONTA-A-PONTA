@@ -43,7 +43,7 @@ módulo = n = 221
 *Exemplo criptografando: **42**^*11 (717.368.321.110.468.608) mod 221 = **87**
 *descriptografando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.994.383.111.779.411.134.326.272.099.143) mod 221 = **42**
 
-*obs: utilize a calculadora do windows ou site https://www.wolframalpha.com/ para calcular esses números grandes!
+*obs: utilize a calculadora do windows ou [site](https://www.wolframalpha.com/) para calcular esses números grandes!
 
 
 
