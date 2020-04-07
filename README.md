@@ -5,7 +5,7 @@
 Este programa escrito em python demonstra uma tecnica de criptação utilizada no mundo todo 
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/home.PNG">
+  <img width="460" height="350" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/home.PNG">
 </p>
 
 ## Como funciona criptográfia assimétrica?
