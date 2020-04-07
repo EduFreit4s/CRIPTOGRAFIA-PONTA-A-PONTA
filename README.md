@@ -13,6 +13,7 @@ A criptografia é baseada em uma transformada cuja função inversa é muito dí
 A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. Funciona assim:
 Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
 
+Na nossa analogia, **x** representa o texto que eu quero cifrar, enquanto o **m** é o mesmo texto já embaralhado.
 A função assimétrica de criptográfia é dada por (*x*^*chave pública*) mod *módulo* = **m** e a função inversa ou de descriptografia é dada por (**m**^*chave privada*) mod *módulo* = **x**.  
 
 *Observe que apenas a chave privada é capaz de desfazer a criptográfia e a segurança do sistema depende de ninguém conhecê-la ou quão díficil é tentar descobrir*
