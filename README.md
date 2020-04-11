@@ -1,6 +1,6 @@
 # end-to-end-encryption
 
-### Status: Incompleto!
+### Status: funcional!
 
 Este programa escrito em python demonstra uma técnica de criptação utilizada no mundo todo 
 
