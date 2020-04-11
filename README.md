@@ -10,7 +10,7 @@ Este programa escrito em python demonstra uma técnica de criptação utilizada 
 
 ## Como funciona criptografia assimétrica?
 
-A criptografia é baseada em uma transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico! Imagine o seno (*x*) = *m*. Se quisermos encontrar o valor de **x** da função seno cuja resposta é **m**, basta aplicar a função inversa arco seno (*m*) = *x*. *Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90. *Até agora fácil né?
+A criptografia é baseada em uma transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico! Imagine o seno (*x*) = *m*. Se quisermos encontrar o valor de **x** da função seno cuja resposta é **m**, basta aplicar a função inversa arco seno (*m*) = *x*. *Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?*
 
 A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. Funciona assim:
 Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
