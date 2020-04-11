@@ -21,8 +21,6 @@ A função assimétrica de criptografia é dada por (*x*^*chave pública*) mod *
 
 ### *Chave pública, privada e módulo*
 
-*Não é todo número que funciona, por isso, é necessário conhecer o algoritmo gerador de tais números tão especiais*
-
 São necessários dois números primos bem grandes. Chamaremos esses números de **p** e **q**. O nosso primeiro número mágico **módulo** é o produto de *p e q*. Vamos chamar esse produto de **n**.
 Depois é necessário calcular Phi (**n**) que é dado por (**p**-1) * (**q**-1).
 
@@ -51,14 +49,14 @@ Descodificando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.99
 
 *42 = Eu*
 
-*obs.: utilize a calculadora do Windows ou [site](https://www.wolframalpha.com/) se quiser calcular esses números grandes! *
+*obs.: utilize a calculadora do Windows ou esse [site](https://www.wolframalpha.com/) se quiser calcular esses números grandes! *
 
 ### História do RSA, teoria e aplicações
 
 RSA é um acrônimo para (Rivest-Shamir-Adleman). Cientistas criadores do algoritmo apresentado pela primeira vez em 1978 para uso militar e estratégico. 
-A RSA Data Security Inc. recomenda gerar números primos p e q com 2048 bits de tamanho, ou seja, 617 dígitos. Isso garante proteção até 2030.  
+A RSA Data Security Inc. (empresa que padroniza o algoritmo) recomenda gerar números primos p e q com 2048 bits de tamanho, ou seja, 617 dígitos. Isso garante proteção até 2030.  
 
-A teoria dos números é a base do rsa e sua força vem do problema da fatoração de inteiros em tempo polinomial. Problema esse tão difícil quanto o paradoxo do caixeiro viajante ou problema do logaritmo discreto <br/><br/>
+A teoria dos números é a base do rsa e sua força vem do problema da fatoração de inteiros em tempo polinomial. Problema esse tão difícil quanto o [paradoxo do caixeiro viajante](https://pt.wikipedia.org/wiki/Problema_do_caixeiro-viajante) ou problema do logaritmo discreto <br/><br/>
 *Quantas combinações de p e q são capazes de gerar um n?* Essa resposta só depende do tamanho de p e q. <br/>
 <p align="center">
   <img width="400" height="200" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
