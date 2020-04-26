@@ -5,9 +5,7 @@
 </h1>
 
 
-> The interface of user is equal to a joke. If you have than explain, she the not so good
-
-Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático simples
+> Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático simples
 
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
