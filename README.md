@@ -23,10 +23,10 @@ Este programa escrito em python demonstra uma técnica de criptação utilizada 
 
 ## Como funciona criptografia assimétrica?
 
-<h5 align="left">
+<h5>
   
 		A criptografia funciona como transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico!
-	Imagine o seno(x) = m. Na mamatemática, se quisermos encontrar o valor de x da função seno cuja resposta é m, basta aplicar a 				
+	Imagine o seno(x) = m. Na mamatemática, se quisermos encontrar o valor de x da função seno cuja resposta é m, basta aplicar a 	
 	função inversa arco seno(m) que encontraremos x.
  *Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?*
 
@@ -37,7 +37,7 @@ Este programa escrito em python demonstra uma técnica de criptação utilizada 
 
 	*Observe que apenas a chave privada é capaz de desfazer a criptografia. A segurança do sistema depende de ninguém a conhecer ou quão difícil é tentar descobri-la*
 
-</p>
+</h5>
 
 ### *Chave pública, privada e módulo*
 
