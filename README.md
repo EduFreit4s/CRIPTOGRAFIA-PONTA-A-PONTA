@@ -1,4 +1,9 @@
-# end-to-end-encryption
+<p align="center">
+  
+</p>
+
+
+end-to-end-encryption
 
 > The interface of user is equal to a joke. If you have than explain, she the not so good
 
@@ -15,9 +20,9 @@ Este programa escrito em python demonstra uma técnica de proteção de dados ut
 ## Introdução
 Este programa escrito em python demonstra uma técnica de criptação utilizada no mundo todo 
 
-<p align="center">
-  <img width="460" height="400" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/home.PNG">
-</p>
+<h1 align="center">
+    CRIPTOGRAFIA DE PONTA A PONTA
+</h1>
 
 ## Como funciona criptografia assimétrica?
 
