@@ -4,9 +4,6 @@
     CRIPTOGRAFIA DE PONTA A PONTA
 </h1>
 
-
-> Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático simples
-
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-works">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -14,6 +11,7 @@
   <a href="#História do RSA, teoria e aplicações">Sobre</a>
 </p>
 
+> Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático simples
 
 ## Introdução
 
