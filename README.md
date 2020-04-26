@@ -1,8 +1,11 @@
 
+
 <h1 align="center">
 
     CRIPTOGRAFIA DE PONTA A PONTA
 </h1>
+
+> Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
 
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -11,10 +14,15 @@
   <a href="#História do RSA, teoria e aplicações">Sobre</a>
 </p>
 
-> Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático simples
-
 ## Introdução
 
+> A criptografia de ponta a ponta é um sistema de algoritmos matemáticos que embaralham seus dados de tal forma que ninguém sem acesso a senha poderá compreender o conteúdo.
+
+Esse mini artigo vai demonstrar com riqueza de detalhes e uma linguagem acessível como mensageiros online fazem para proteger suas mensagens de texto. Para isso, foi criada uma programa utilizando: 
+- Python 3.8
+- Qt Designer 5.14.1
+
+> Todos os códigos estão disponíveis acima com comentários
 
 ## Como funciona a criptografia?
 
@@ -89,6 +97,11 @@ A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dad
                                           
                                                 
                                                  Copyright (c) 2020 EduFreit4s
+
+
+
+
+
 
 
 
