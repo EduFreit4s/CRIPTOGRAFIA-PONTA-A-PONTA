@@ -18,26 +18,31 @@ Esta interface python-only demonstra uma das técnicas mais sofisticadas para pr
 
 
 ## Introdução
-Este programa escrito em python demonstra uma técnica de criptação utilizada no mundo todo 
 
 
-## Como funciona criptografia assimétrica?
+## Como funciona a criptografia?
 
-<h5>
+> A criptografia funciona como uma transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico! Imagine o seno(x) = m. Na matemática, se quisermos encontrar o valor de x da função seno cuja resposta é m, basta aplicar a função inversa arco seno(m) que encontraremos x<br>.
+*Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?<br>*
+A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. 
+
+
+Funciona assim:
+
+> Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
+
+A função assimétrica de criptografia é dada por (*x*^*chave pública*) mod *módulo* = **m** e a função inversa é dada por (**m**^*chave privada*) mod *módulo* = **x**. Na nossa analogia, **x** representa o texto puro, enquanto o **m** é o mesmo texto codificado.  
+
+>*Observe que apenas a chave privada é capaz de desfazer a criptografia. A segurança do sistema depende de ninguém a conhecer ou quão difícil é tentar descobri-la*
+    
+</h7>
+
   
-		A criptografia funciona como transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico!
-	Imagine o seno(x) = m. Na mamatemática, se quisermos encontrar o valor de x da função seno cuja resposta é m, basta aplicar a 	
-	função inversa arco seno(m) que encontraremos x.
- 	*Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?*
+		
 
-	A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. Funciona assim:
-	Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
 
-	A função assimétrica de criptografia é dada por (*x*^*chave pública*) mod *módulo* = **m** e a função inversa é dada por (**m**^*chave privada*) mod *módulo* = **x**. Na nossa analogia, **x** representa o texto puro, enquanto o **m** é o mesmo texto codificado.  
 
-	*Observe que apenas a chave privada é capaz de desfazer a criptografia. A segurança do sistema depende de ninguém a conhecer ou quão difícil é tentar descobri-la*
 
-</h5>
 
 ### *Chave pública, privada e módulo*
 
@@ -62,11 +67,6 @@ Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** 
 	
 </h1>
 
-
-
- <br/>
- <br/>
- <br/>
 
 Na criptografia cada letra é convertida em um número, essa relação valor-letra pode ser chamada de cifra. Neste programa foi utilizado o padrão ASCII que enumera as letras e símbolos mais utilizados.
 
