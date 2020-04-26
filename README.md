@@ -5,7 +5,7 @@
 
 > The interface of user is equal to a joke. If you have than explain, she the not so good
 
-Este programa escrito em python demonstra uma técnica de proteção de dados utilizada em todo o mundo
+Esta interface simples python-only demonstra uma das técnicas mais sofisticadas do mundo para proteger dados utilizando um truque matemático fantastico
 
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
