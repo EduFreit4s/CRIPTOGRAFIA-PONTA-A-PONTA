@@ -6,7 +6,7 @@
   <a href="#-introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-works">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Demonstração">Matemática</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-História do RSA, teoria e aplicações">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#História do RSA, teoria e aplicações">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">technologies</a>
 </p>
 
@@ -61,7 +61,7 @@ Descodificando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.99
 
 *obs.: utilize a calculadora do Windows ou esse [site](https://www.wolframalpha.com/) se quiser calcular esses números grandes! *
 
-## 🚀 Technologies
+## Technologies
 
 ### História do RSA, teoria e aplicações
 
