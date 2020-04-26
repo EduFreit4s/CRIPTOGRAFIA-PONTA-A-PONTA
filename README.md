@@ -23,7 +23,7 @@ Esta interface python-only demonstra uma das técnicas mais sofisticadas para pr
 ## Como funciona a criptografia?
 
 > A criptografia funciona como uma transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico! Imagine o seno(x) = m. Na matemática, se quisermos encontrar o valor de x da função seno cuja resposta é m, basta aplicar a função inversa arco seno(m) que encontraremos x<br>.
-*Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?<br>*
+*Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?* <br>
 A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. 
 
 
@@ -36,7 +36,8 @@ A função assimétrica de criptografia é dada por (*x*^*chave pública*) mod *
 >*Observe que apenas a chave privada é capaz de desfazer a criptografia. A segurança do sistema depende de ninguém a conhecer ou quão difícil é tentar descobri-la*
     
 
-### *Chave pública, privada e módulo*
+
+## *Chave pública, privada e módulo*
 
 São necessários dois números primos bem grandes. Chamaremos esses números de **p** e **q**. O nosso primeiro número mágico **módulo** é o produto de *p e q*. Vamos chamar esse produto de **n**.
 Depois é necessário calcular Phi (**n**) que é dado por (**p**-1) * (**q**-1).
@@ -47,7 +48,7 @@ Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** 
 
 ### *Demonstração*
 
-<h6 align="center">
+<h4 align="center">
 	
 	p = 13, q = 17 | n -> p*q -> 13*17 = 221
 	
@@ -57,7 +58,7 @@ Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** 
 	
 	Chave pública[e] = 11  |  Chave privada[d] = 35  |  Módulo[n] = 221
 	
-</h1>
+</h4>
 
 
 Na criptografia cada letra é convertida em um número, essa relação valor-letra pode ser chamada de cifra. Neste programa foi utilizado o padrão ASCII que enumera as letras e símbolos mais utilizados.
@@ -92,8 +93,6 @@ A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dad
                                           
                                                 
                                                  Copyright (c) 2020 EduFreit4s
-
-
 
 
 
