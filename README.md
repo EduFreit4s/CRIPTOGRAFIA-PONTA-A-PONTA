@@ -35,14 +35,6 @@ A função assimétrica de criptografia é dada por (*x*^*chave pública*) mod *
 
 >*Observe que apenas a chave privada é capaz de desfazer a criptografia. A segurança do sistema depende de ninguém a conhecer ou quão difícil é tentar descobri-la*
     
-</h7>
-
-  
-		
-
-
-
-
 
 ### *Chave pública, privada e módulo*
 
