@@ -2,12 +2,14 @@
 
 > The interface of user is equal to a joke. If you have than explain, she the not so good
 
-## Sumário
- 
-* [Introdução](#introdução)
-* [Introdução](#introdução)
+<p align="center">
+  <a href="#-intro">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-works">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-math">Matemática</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-# introdução
+
+## Introdução
 Este programa escrito em python demonstra uma técnica de criptação utilizada no mundo todo 
 
 <p align="center">
