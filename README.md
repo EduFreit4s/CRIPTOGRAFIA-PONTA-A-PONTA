@@ -18,7 +18,7 @@
 
 > A criptografia de ponta a ponta é um sistema de algoritmos matemáticos chamado RSA que embaralham seus dados de tal forma que ninguém sem acesso a senha poderá compreender o conteúdo.
 
-Esse mini artigo vai demonstrar com riqueza de detalhes e uma linguagem acessível como mensageiros online fazem para proteger suas mensagens de texto. Para isso, foi criada uma programa utilizando: 
+Esse mini artigo vai demonstrar com riqueza de detalhes e uma linguagem acessível como mensageiros online fazem para proteger suas mensagens de texto. Para isso, foi criada uma interface amigável utilizando: 
 - Python 3.8
 - Qt Designer 5.14.1
 
@@ -34,7 +34,7 @@ Agora que você sabe que os dados são embaralhados, vamos aprofundar esse proce
 >
 > *Exemplo: seno(90) = 1, logo, arcoseno(1) é igual a 90.* *Fácil né?* 
 
-Assim como o seno, algoritmo que estamos estudando é uma função com dado de entrada e saída:
+Assim como o seno, o algoritmo que estamos estudando é uma função com dado de entrada e saída:
 
 <p align="center">
 	<b>m^e mod n = m'</b>
