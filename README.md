@@ -57,7 +57,7 @@ Chamamos **e** e **n** de chave pública e **d** de chave privada
     Chave pública e Chave privada
 </h2>
 
->Nossa senha na verdade são três números (**e**, **d** e **n**), as "chaves". Qualquer pessoa pode ter acesso a **e** e **n** (elas são utilizadas para codificar a informação, mas apenas quem tiver d consegue resolver o enigma. Para encontrá-las as chaves são necessários uma sequência de passos:
+>Nossa senha na verdade são três números (**e**, **d** e **n**), as "chaves". Qualquer pessoa pode ter acesso a **e** e **n** (elas são utilizadas para codificar a informação, mas apenas quem tiver **d** consegue resolver o enigma) Para encontrar as chaves são necessários uma sequência de passos:
 
 - Definir dois números primos.
 
