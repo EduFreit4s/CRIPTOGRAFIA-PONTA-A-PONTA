@@ -3,7 +3,7 @@
     CRIPTOGRAFIA DE PONTA A PONTA
 </h1>
 
->. Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
+>Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
 
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
