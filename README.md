@@ -9,10 +9,11 @@
 
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-works">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Demonstração">Matemática</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#História do RSA, teoria e aplicações">Sobre</a>
+  <a href="#como-funciona-a-criptografia">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#demonstração-matemática">Matemática</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#teoria-e-aplicações-do-rsa">História</a>
 </p>
+
 
 ## Introdução
 
@@ -24,33 +25,58 @@ Esse mini artigo vai demonstrar com riqueza de detalhes e uma linguagem acessív
 
 > Todos os códigos estão disponíveis acima com comentários
 
-## Como funciona a criptografia?
+Uma versão portátil (não requer administrador) está disponível para download na pasta [windeploy](https://github.com/EduFreit4s/end-to-end-encryption/tree/master/libraries)
 
-> A criptografia funciona como uma transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico! Imagine o seno(x) = m. Na matemática, se quisermos encontrar o valor de x da função seno cuja resposta é m, basta aplicar a função inversa arco seno(m) que encontraremos x<br>.
-*Exemplo: seno (90) = 1 logo, arco seno (1) é igual a 90.* *Até agora fácil né?* <br>
-A função *assimétrica RSA* depende de 3 números importantes que chamamos de chave pública, módulo e chave privada. 
+## Como funciona a criptografia
 
+Agora que você sabe que os dados são embaralhados, vamos aprofundar esse processo.
 
-Funciona assim:
+> A criptografia funciona como uma transformada cuja função inversa é muito difícil de calcular. Ficou estranho né? Eu explico! Imagine o seno(x) = m. Na matemática, se quisermos encontrar o seno(x) cuja resposta é m, basta aplicar a função inversa arcoseno(m) que encontraremos x.
+>
+> *Exemplo: seno(90) = 1, logo, arcoseno(1) é igual a 90.* *Fácil né?* 
 
-> Com a minha chave pública e módulo, qualquer pessoa no mundo pode achar **m**, mas apenas quem tiver a chave privada e o módulo podem achar **x**!
+Assim como o seno, algoritmo que estamos estudando é uma função com dado de entrada e saída dada por:
 
-A função assimétrica de criptografia é dada por (*x*^*chave pública*) mod *módulo* = **m** e a função inversa é dada por (**m**^*chave privada*) mod *módulo* = **x**. Na nossa analogia, **x** representa o texto puro, enquanto o **m** é o mesmo texto codificado.  
+<p align="center">
+	<b>m^e mod n = m'</b>
+</p>
 
->*Observe que apenas a chave privada é capaz de desfazer a criptografia. A segurança do sistema depende de ninguém a conhecer ou quão difícil é tentar descobri-la*
+E o inverso da nossa metáfora:
+
+<p align="center">
+	<b>m'^d mod n = m</b>
+</p>
+
+*Onde **m** e **'m** significa texto puro e o criptografado respectivamente.*
+>A equação com **e** é utilizada para codificar o texto puro
+>
+>A equação com **d** é usada para descriptografar  
+
+Chamamos **e** e **n** de chave pública e **d** de chave privada  
+>Para facilitar a linguagem vamos chamar **n** de módulo
     
+ <h2 align="center">
+    <em>Chave pública, privada e módulo</em>
+</h2>
 
+>Nossa senha na verdade são três números (**e**, **d** e **n**) as "chaves". Para encontrar-las é necessários uma sequência de passos:
 
-## *Chave pública, privada e módulo*
+- Definir dois números primos.
 
-São necessários dois números primos bem grandes. Chamaremos esses números de **p** e **q**. O nosso primeiro número mágico **módulo** é o produto de *p e q*. Vamos chamar esse produto de **n**.
-Depois é necessário calcular Phi (**n**) que é dado por (**p**-1) * (**q**-1).
+**Quanto maior esses números primos, mas seguro é a criptografia*
+ 
+ >Chamamos esses números primos de **p** e **q**. **n** é obtido a partir produto de p e q. 
 
-Vamos chamar a nossa **chave pública** de *e*. A matemática garante que existe um 1 < *e* < Phi (**n**) cujo o máximo divisor comum entre **e** e Phi (**n**) é igual a um.
+- Calcular função totiente φ(**n**) que é dado por (**p**-1)*(**q**-1). 
 
-Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** cujo o resto da divisão por Phi (**n**) tem valor igual a um. <br/> *Exemplo: e * d mod Phi (n) = 1*
+> A matemática garante que existe um **e** tal que 1 < **e** < φ(**n**)  e o máximo divisor comum entre **e** e φ(**n**) é igual a 1.
 
-### *Demonstração*
+- Achar **d**, o inverso modular de **e**
+
+>  A **chave privada** ou **d**,  pode ser encontrada rapidamente  quando **d** × **e** mod φ(**n**) for igual a um. 
+
+## Demonstração matemática
+
 
 <h4 align="center">
 	
@@ -65,30 +91,73 @@ Por último, a **chave privada** ou **d**, é um fator do produto **d** * **e** 
 </h4>
 
 
-Na criptografia cada letra é convertida em um número, essa relação valor-letra pode ser chamada de cifra. Neste programa foi utilizado o padrão ASCII que enumera as letras e símbolos mais utilizados.
+>Para embaralhar o texto, cada letra será convertida em um número <b>com 6 caracteres</b>, essa relação valor-letra pode ser chamada de cifra. Neste programa foi utilizado o padrão ASCII que enumera as letras e símbolos mais utilizados.
 
-*Exemplo: E = 4, u = 2*
+Vamos criptografar a palavra "<b>IFPB</b>"<br>
 
-Codificando: **42**^*11 (717.368.321.110.468.608) mod 221 = **87** <br/>
-Descodificando: **87**^35 (76.414.159.693.594.362.648.493.473.462.227.115.569.994.383.111.779.411.134.326.272.099.143) mod 221 = **42** <br/>
+*Para simplificar os cálculos utilizaremos a tabela abaixo ao invés do padrão ASCII*
 
-*42 = Eu*
+| LETRA | VALOR |
+| ----- | ----- |
+|   I 	| 	6 	|
+|   F 	|   1	|
+|   P 	| 	4 	|
+|   B 	|   7	|
 
-*obs.: utilize a calculadora do Windows ou esse [site](https://www.wolframalpha.com/) se quiser calcular esses números grandes! *
+> Utilizando a cifra e a função <b>m</b>^<b>e</b> mod <b>n</b>  para criptografar temos:
+<p align="center">
+I ---> <b>6</b>^<b>11</b> mod <b>221</b> = 000141<br>
+F ---> <b>1</b>^<b>11</b> mod <b>221</b> = 000001<br> 
+P ---> <b>4</b>^<b>11</b> mod <b>221</b> = 000166<br>
+B ---> <b>7</b>^<b>11</b> mod <b>221</b> = 000184<br> 
+</p>
+ 
+> Nossa palavra "<b>IFPB</b>" codificada é: "<b>000141</b>000001<b>000166</b>000184"
 
-## Technologies
+#### Agora vamos reverter o processo seguindo os passos:
 
-### História do RSA, teoria e aplicações
+- Quebrar a informação em bloco <b>com 6 caracteres</b>
+<p align="center">
+	<b>000141</b>000001<b>000166</b>000184
+</p>
+
+>Utilizando a função <b>m'</b>^<b>d</b> mod <b>n</b>  para descriptografar temos:
+ 
+<p align="center">
+<b>000141</b>^<b>35</b> mod <b>221</b> = 6<br>
+000001^<b>35</b> mod <b>221</b> = 1<br> 
+<b>000166</b>^<b>35</b> mod <b>221</b> = 4<br>
+000184^<b>35</b> mod <b>221</b> = 7<br> 
+</p>
+
+- Utilizar a cifra 
+
+| VALOR | LETRA |
+| ----- | ----- |
+|   6 	| 	I 	|
+|   1 	|   F	|
+|   4 	| 	P 	|
+|   7 	|   B	|
+
+> Nossa cifra“<b>6</b>1<b>4</b>7" convertida é: "<b>IFPB</b>" 
+
+*obs.: utilize a calculadora do Windows ou esse [site](https://www.wolframalpha.com/) se quiser calcular esses números grandes!*
+
+
+## Teoria e aplicações do RSA
 
 RSA é um acrônimo para (Rivest-Shamir-Adleman). Cientistas criadores do algoritmo apresentado pela primeira vez em 1978 para uso militar e estratégico. 
-A RSA Data Security Inc. (empresa que padroniza o algoritmo) recomenda gerar números primos p e q com 2048 bits de tamanho, ou seja, 617 dígitos. Isso garante proteção até 2030.  
+A RSA Data Security Inc. (empresa que padroniza o algoritmo) recomenda gerar números primos  <em>p e q</em> com 2048 bits de tamanho, ou seja, 617 dígitos. Isso garante proteção até 2030.  
 
-A teoria dos números é a base do rsa e sua força vem do problema da fatoração de inteiros em tempo polinomial. Problema esse tão difícil quanto o problema do [caixeiro viajante](https://pt.wikipedia.org/wiki/Problema_do_caixeiro-viajante) ou [logaritmo discreto](https://pt.wikipedia.org/wiki/Logaritmo_discreto) <br/><br/>
-*Quantas combinações de p e q são capazes de gerar um n?* Essa resposta só depende do tamanho de p e q. <br/>
+A teoria dos números é a base da criptografia assimétrica e sua força vem do problema da fatoração de inteiros. Problema esse tão difícil quanto o problema do [caixeiro viajante](https://pt.wikipedia.org/wiki/Problema_do_caixeiro-viajante) ou [logaritmo discreto](https://pt.wikipedia.org/wiki/Logaritmo_discreto) <br/>
+
+Sabendo que <b>n</b> é um produto de <em>p e q</em> e <b>n</b> trafega em rede insegura, podemos roubar essa informação e utilizar todos computadores do planeta para encontrar via força bruta, os dois fatores <em>p * q</em> que deram origem a <b>n</b>. 
+
+> Basicamente, fatorar um semiprimo (produto de dois números primos) <em>p e q</em> pode levar o tempo do universo se  <em>p e q</em> forem grandes o suficiente!
+
 <p align="center">
   <img width="400" height="200" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/404.jpg">
 </p>
-Se eles forem tão grandes quanto possível, mesmo com todo poder computacional da terra, levaria mais tempo do que a idade do universo para quebrar o sistema.<br/><br/>
 
 A criptografia mudou o mundo para sempre. Essa técnica protege todo tipo de dado na internet. Desenvolvedores podem blindar seu software com chaves que garantem autenticidade. RSA também é utilizado em programas de vpn que torna impossível rastrear uma remetente web. 
 
