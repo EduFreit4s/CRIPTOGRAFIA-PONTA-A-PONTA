@@ -16,7 +16,7 @@
 >Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
 
 <p align="center">
-  <img width="917" height="515" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/load.png">
+  <img width="1019" height="573" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/load.png">
 </p>
 
 ## Introdução
