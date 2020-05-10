@@ -3,8 +3,6 @@
     CRIPTOGRAFIA DE PONTA A PONTA
 </h1>
 
-
-
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#como-funciona-a-criptografia">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -13,7 +11,7 @@
   <a href="#contato">Contato</a>
 </p>
 
->Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
+>Esta interface python demonstra uma das técnicas mais sofisticadas de proteger dados utilizando um truque matemático incrível
 
 <p align="center">
   <img width="815" height="458" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/load.png">
@@ -23,7 +21,7 @@
 
 > A criptografia de ponta a ponta é um sistema de algoritmos matemáticos chamado RSA que embaralham seus dados de tal forma que ninguém sem acesso a senha poderá compreender o conteúdo.
 
-Esse mini artigo vai demonstrar com riqueza de detalhes e uma linguagem acessível como mensageiros online fazem para proteger suas mensagens de texto. Para isso, foi criada uma interface amigável utilizando: 
+Esse mini artigo vai demonstrar com detalhes e uma linguagem acessível como mensageiros online fazem para proteger suas mensagens de texto. Para isso, foi criada uma interface amigável utilizando: 
 - Python 3.8
 - Qt Designer 5.14.1
 
