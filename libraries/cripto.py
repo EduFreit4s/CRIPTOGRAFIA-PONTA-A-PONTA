@@ -87,12 +87,4 @@ def unlock(text, d, n):
             u = ""
     return m
 
-################################# test ##################################
 
-#e, n, d= generator()
-#print("Public: ", e, n)
-#print("Private: ", d)
-
-#g = lock("42", e, n)
-#print(g)
-#print(unlock(g, d, n))
