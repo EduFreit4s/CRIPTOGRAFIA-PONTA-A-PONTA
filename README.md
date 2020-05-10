@@ -3,6 +3,8 @@
     CRIPTOGRAFIA DE PONTA A PONTA
 </h1>
 
+>Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
+
 <p align="center">
   <a href="#introdução">Introdução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#como-funciona-a-criptografia">Como funciona</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -14,10 +16,6 @@
 <p align="center">
   <img width="1019" height="573" src="https://github.com/EduFreit4s/end-to-end-encryption/blob/master/images/load.png">
 </p>
-
-
->Esta interface python-only demonstra uma das técnicas mais sofisticadas para proteger dados utilizando um truque matemático incrível
-
 
 ## Introdução
 
